@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prueba JS en GitHub Pages</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 40px; text-align: center; }
+    button { padding: 10px 20px; background: #0066ff; color: white; border: none; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <h1>🚀 Prueba de JavaScript en GitHub Pages</h1>
+  <p>Haz clic para probar si el JavaScript se ejecuta correctamente.</p>
+  <button id="botonPrueba">Probar JavaScript</button>
+  <p id="resultado"></p>
+
+  <script>
+    // Este código se ejecuta completamente del lado del navegador
+    document.getElementById('botonPrueba').addEventListener('click', () => {
+      const mensaje = "✅ JavaScript está funcionando en GitHub Pages";
+      document.getElementById('resultado').textContent = mensaje;
+      alert(mensaje);
+      console.log(mensaje);
+    });
+  </script>
+</body>
+</html>
